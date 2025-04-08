@@ -10,6 +10,7 @@ namespace PadreHijo
 {
     internal class videojuego:Consola
     {
+        public videojuego() { }
         public videojuego(string genero, double precio, string modelo, int almacenamiento, int anio)
             : base( modelo,  almacenamiento,  anio)
         {
