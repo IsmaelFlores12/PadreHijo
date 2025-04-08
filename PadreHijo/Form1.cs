@@ -35,7 +35,7 @@ namespace PadreHijo
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            if (acciones.InsertarJuego(txbGenero.Text, Convert.ToDouble(txbPrecio), txbModelo.Text, Convert.ToInt32(txbAlmacenamiento), Convert.ToInt32(txbAño)))
+            if (acciones.InsertarJuego(txbGenero.Text, Convert.ToDouble(txbPrecio.Text), txbModelo.Text, Convert.ToInt32(txbAlmacenamiento.Text), Convert.ToInt32(txbAño.Text)))
                 MessageBox.Show("Agregado con exito");
             else
                 MessageBox.Show("fallo algo al agregar");
@@ -43,10 +43,20 @@ namespace PadreHijo
 
         private void Actualizar_Click(object sender, EventArgs e)
         {
-            if (acciones.actualizar(txbGenero.Text, Convert.ToDouble(txbPrecio), txbModelo.Text, Convert.ToInt32(txbAlmacenamiento), Convert.ToInt32(txbAño)))
-                MessageBox.Show("Agregado con exito");
+            if (acciones.actualizar(txbGenero.Text, Convert.ToDouble(txbPrecio.Text), txbModelo.Text, Convert.ToInt32(txbAlmacenamiento.Text), Convert.ToInt32(txbAño.Text)))
+                MessageBox.Show("Actualizado con exito");
             else
-                MessageBox.Show("fallo algo al agregar");
+                MessageBox.Show("fallo algo al actualizar");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txbAlmacenamiento.Text = "";
+            txbAño.Text = "";
+            txbEliminar.Text = "";
+            txbGenero.Text = "";
+            txbModelo.Text = "";
+            txbPrecio.Text = "";
         }
     }
 }

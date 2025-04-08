@@ -44,7 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txbAño = new System.Windows.Forms.TextBox();
             this.BtnAgregar = new System.Windows.Forms.Button();
-            this.Actualizar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGdatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,22 +185,33 @@
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
-            // Actualizar
+            // btnActualizar
             // 
-            this.Actualizar.Location = new System.Drawing.Point(939, 346);
-            this.Actualizar.Name = "Actualizar";
-            this.Actualizar.Size = new System.Drawing.Size(117, 48);
-            this.Actualizar.TabIndex = 16;
-            this.Actualizar.Text = "Agregar";
-            this.Actualizar.UseVisualStyleBackColor = true;
-            this.Actualizar.Click += new System.EventHandler(this.Actualizar_Click);
+            this.btnActualizar.Location = new System.Drawing.Point(939, 346);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(117, 48);
+            this.btnActualizar.TabIndex = 16;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.Actualizar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(44, 453);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 506);
-            this.Controls.Add(this.Actualizar);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.txbAño);
             this.Controls.Add(this.label2);
@@ -242,7 +254,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbAño;
         private System.Windows.Forms.Button BtnAgregar;
-        private System.Windows.Forms.Button Actualizar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button button1;
     }
 }
 
